@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Planets Site</title>
+    <script type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <input type="checkbox" id="active" class="checkbox-input" />
+      <label for="active" class="menu-button">
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Nav Menu Button"
+          class="nav-wrapper-img"
+        />
+      </label>
+      <nav class="navigation">
+        <div class="main-logo">THE PLANETS</div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--mercury"
+              >Mercury</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--venus"
+              >Venus</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--earth"
+              >Earth</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--mars">Mars</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--jupiter"
+              >Jupiter</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--saturn"
+              >Saturn</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--uranus"
+              >Uranus</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--neptune"
+              >Neptune</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section-planet">
+        <div class="planet-illustration">
+          <img
+            src="images/planet-mercury.svg"
+            alt="Mercury Image"
+            class="planet-illustration__img"
+          />
+        </div>
+        <div class="planet-info">
+          <div class="planet-info-detail">
+            <div class="planet-info__title">Mercury</div>
+            <div class="planet-info__description">
+              Mercury is the smallest planet in the Solar System and the closest
+              to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+              shortest of all the Sun's planets. Mercury is one of four
+              terrestrial planets in the Solar System, and is a rocky body like
+              Earth.
+            </div>
+            <div class="planet-info__source">
+              <div class="planet-source-text">Source:</div>
+              <div class="planet-source-destination">Wikipedia</div>
+              <img
+                src="images/icon-source.svg"
+                alt="Source Icon"
+                class="planet-source-icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="planet-info-buttons">
+          <div class="planet-btn planet-btn--overview">
+            <span class="btn-num">01</span>
+            Overview
+          </div>
+          <div class="planet-btn planet-btn--structure">
+            <span class="btn-num">02</span>
+            Internal Structure
+          </div>
+          <div class="planet-btn planet-btn--geology">
+            <span class="btn-num">03</span>
+            Surface Geology
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section">
+        <div class="planet-data">
+          <div class="planet-data__type">
+            <div class="planet-data__type--text">Rotation Time</div>
+            <div class="planet-data__type--value rotation-time">58.6 Days</div>
+          </div>
+          <div class="planet-data__type">
+            <div class="planet-data__type--text">Revolution Time</div>
+            <div class="planet-data__type--value revolution-time">
+              87.97 Days
+            </div>
+          </div>
+          <div class="planet-data__type">
+            <div class="planet-data__type--text">Radius</div>
+            <div class="planet-data__type--value radius-value">2439.7 KM</div>
+          </div>
+          <div class="planet-data__type">
+            <div class="planet-data__type--text">Average Temp</div>
+            <div class="planet-data__type--value average-temp">430°C</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

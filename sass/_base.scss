@@ -1,0 +1,53 @@
+// Color Variables
+
+$color-primary: #fff;
+$color-secondary: #38384f;
+$color-dark-layer: #838391;
+$color-mercury-btn-bg: #419ebb;
+$color-venus-btn-bg: #eda249;
+$color-earth-btn-bg: #6f2ed6;
+$color-mars-btn-bg: #d14c32;
+$color-jupyter-btn-bg: #d83a34;
+$color-saturn-btn-bg: #cd5120;
+$color-uranus-btn-bg: #1ec2a4;
+$color-neptune-btn-bg: #2d68f0;
+$color-bg: #070724;
+
+// Media Queries
+
+$bp-4k: 87.5em; //1400 px
+$bp-1200: 75em; //1200 px
+$bp-1100: 68.75em; //1100 px
+$bp-900: 56.25em; // 900 px
+$bp-800: 56.25em; // 900 px
+$bp-700: 43.75em; // 700 px
+$bp-600: 37.5em; // 700 px
+$bp-500: 31.25em; // 500 px
+$bp-400: 25em; // 400 px
+$bp-350: 21.87em; // 350 px
+$bp-300: 18.75em; // 300 px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $color-primary;
+  background-color: $color-bg;
+  background-image: url(../images/background-stars.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Antonio", sans-serif;
+  font-weight: 600;
+}

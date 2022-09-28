@@ -1,0 +1,277 @@
+.section-planet {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+
+  @media only screen and (max-width: $bp-1200) {
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    margin-top: 8rem;
+    padding-top: 1rem;
+    border-top: 0.5px solid $color-dark-layer;
+  }
+
+  @media only screen and (max-width: $bp-600) {
+    justify-content: end;
+  }
+
+  .planet-illustration {
+    margin-left: 30%;
+    margin-top: 15%;
+
+    @media only screen and (max-width: $bp-1200) {
+      margin: 10rem auto 10rem auto;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+      margin-left: 40%;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      margin-left: 45%;
+    }
+
+    @media only screen and (max-width: $bp-350) {
+      margin-left: 50%;
+    }
+
+    &__img {
+      height: 30rem;
+      width: auto;
+    }
+  }
+
+  .planet-info {
+    width: 65%;
+
+    @media only screen and (max-width: $bp-1200) {
+      margin: 0rem auto;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      margin-left: 25rem;
+    }
+
+    @media only screen and (max-width: $bp-350) {
+      margin-left: 28rem;
+    }
+
+    &-detail {
+      @media only screen and (max-width: $bp-500) {
+        width: 170%;
+      }
+
+      @media only screen and (max-width: $bp-400) {
+        width: 190%;
+      }
+    }
+
+    .planet-info__title {
+      font-size: 8rem;
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+
+      @media only screen and (max-width: $bp-350) {
+        font-size: 4rem;
+      }
+    }
+
+    .planet-info__description {
+      margin-bottom: 2rem;
+      letter-spacing: 0.5px;
+      line-height: 2.5rem;
+      word-spacing: 0.2rem;
+
+      @media only screen and (max-width: $bp-350) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .planet-info__source {
+      margin-bottom: 5rem;
+      display: flex;
+      align-items: flex-end;
+
+      .planet-source-text {
+        margin-right: 0.5rem;
+        color: $color-dark-layer;
+      }
+
+      .planet-source-destination {
+        color: $color-dark-layer;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .planet-source-icon {
+        height: 1rem;
+        width: auto;
+        margin-left: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.planet-info-buttons {
+  @media only screen and (max-width: $bp-900) {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    border-bottom: 0.5px solid $color-dark-layer;
+  }
+
+  @media only screen and (max-width: $bp-600) {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    padding-left: 25%;
+    padding-right: 0%;
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    padding-left: 40%;
+    padding-right: 0%;
+  }
+
+  .planet-btn {
+    margin: 2rem 0 0 95%;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.1rem;
+    width: 45rem;
+    border: 1px solid $color-dark-layer;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+
+    @media only screen and (max-width: $bp-1200) {
+      margin: 2rem 18%;
+    }
+
+    @media only screen and (max-width: $bp-900) {
+      width: 100%;
+      margin: 0rem 0;
+      border: none;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+      padding: 1.5rem 0.5rem;
+      // margin-left: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+      padding: 1.5rem 0rem;
+      // width: 40%;
+      // margin-left: 10rem;
+    }
+
+    .btn-num {
+      margin-right: 3rem;
+      margin-left: 3rem;
+      color: $color-dark-layer;
+
+      @media only screen and (max-width: $bp-900) {
+        visibility: hidden;
+        width: 0%;
+      }
+
+      @media only screen and (max-width: $bp-600) {
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
+    }
+  }
+}
+
+.planet-data {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 70%;
+  margin-left: 20%;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-1200) {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  &__type {
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    border: 0.1rem solid $color-dark-layer;
+    border-radius: 0.1rem;
+    text-transform: uppercase;
+    width: 25rem;
+
+    @media only screen and (max-width: $bp-1200) {
+      width: 20rem;
+    }
+
+    @media only screen and (max-width: $bp-900) {
+      margin: 2rem auto;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      width: 90%;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--text {
+      color: $color-dark-layer;
+      margin-bottom: 2rem;
+    }
+
+    &--value {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-1200) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.active {
+  background-color: $color-mercury-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 10px solid $color-mercury-btn-bg !important;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0%;
+}
+
+.mercury-bg {
+  background-color: $color-mercury-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-mercury-btn-bg !important;
+  }
+}
+
+.venus-bg {
+  background-color: $color-venus-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-venus-btn-bg !important;
+  }
+}
+
+.earth-bg {
+  background-color: $color-earth-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-earth-btn-bg !important;
+  }
+}
+
+.mars-bg {
+  background-color: $color-mars-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-mars-btn-bg !important;
+  }
+}
+
+.jupiter-bg {
+  background-color: $color-jupyter-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-jupyter-btn-bg !important;
+  }
+}
+
+.saturn-bg {
+  background-color: $color-saturn-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-saturn-btn-bg !important;
+  }
+}
+
+.uranus-bg {
+  background-color: $color-uranus-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-uranus-btn-bg !important;
+  }
+}
+
+.neptune-bg {
+  background-color: $color-neptune-btn-bg;
+
+  @media only screen and (max-width: $bp-900) {
+    background-color: transparent;
+    border-bottom: 5px solid $color-neptune-btn-bg !important;
+  }
+}

@@ -1,0 +1,387 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #070724;
+  background-image: url(../images/background-stars.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Antonio", sans-serif;
+  font-weight: 600; }
+
+@media only screen and (min-width: 43.75em) {
+  .menu-button {
+    visibility: hidden;
+    width: 0;
+    background: linear-gradient(-135deg, #c850c0, #4158d8);
+    transition: all 0.3s ease-in-out; } }
+
+@media only screen and (max-width: 43.75em) {
+  .menu-button .nav-wrapper-img {
+    position: fixed;
+    top: 3.5rem;
+    right: 3.2rem;
+    height: 2rem;
+    z-index: 2;
+    text-align: center;
+    line-height: 5rem;
+    width: 5rem;
+    width: auto;
+    cursor: pointer; } }
+
+#active {
+  display: none;
+  transition: all 0.3s; }
+  #active:checked ~ .navigation {
+    clip-path: circle(75%);
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); }
+  #active:checked ~ .navigation .main-logo {
+    visibility: hidden;
+    width: 0%; }
+  #active:checked ~ .menu-button .nav-wrapper-img {
+    color: #4158d8; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid #838391;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      flex-direction: column;
+      justify-content: center; } }
+  @media only screen and (max-width: 43.75em) {
+    .navigation {
+      clip-path: circle(2.5rem at calc(100% - 4.5rem) 4.5rem);
+      position: fixed;
+      height: 100%;
+      background: transparent;
+      top: 0;
+      left: 0;
+      margin: 0 0; } }
+  .navigation .main-logo {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    align-self: flex-start; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation .main-logo {
+        align-self: center; } }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__list {
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+  .navigation__item {
+    list-style: none;
+    margin: 3rem 2rem 2rem 2rem;
+    text-transform: uppercase; }
+  .navigation__link {
+    text-decoration: none;
+    color: #838391;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__link {
+        color: #fff; } }
+    .navigation__link:hover {
+      color: #fff; }
+
+.active {
+  background-color: #419ebb; }
+  @media only screen and (max-width: 56.25em) {
+    .active {
+      background-color: transparent;
+      border-bottom: 10px solid #419ebb !important; } }
+
+.hidden {
+  visibility: hidden;
+  width: 0%; }
+
+.mercury-bg {
+  background-color: #419ebb; }
+  @media only screen and (max-width: 56.25em) {
+    .mercury-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #419ebb !important; } }
+
+.venus-bg {
+  background-color: #eda249; }
+  @media only screen and (max-width: 56.25em) {
+    .venus-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #eda249 !important; } }
+
+.earth-bg {
+  background-color: #6f2ed6; }
+  @media only screen and (max-width: 56.25em) {
+    .earth-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #6f2ed6 !important; } }
+
+.mars-bg {
+  background-color: #d14c32; }
+  @media only screen and (max-width: 56.25em) {
+    .mars-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #d14c32 !important; } }
+
+.jupiter-bg {
+  background-color: #d83a34; }
+  @media only screen and (max-width: 56.25em) {
+    .jupiter-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #d83a34 !important; } }
+
+.saturn-bg {
+  background-color: #cd5120; }
+  @media only screen and (max-width: 56.25em) {
+    .saturn-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #cd5120 !important; } }
+
+.uranus-bg {
+  background-color: #1ec2a4; }
+  @media only screen and (max-width: 56.25em) {
+    .uranus-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #1ec2a4 !important; } }
+
+.neptune-bg {
+  background-color: #2d68f0; }
+  @media only screen and (max-width: 56.25em) {
+    .neptune-bg {
+      background-color: transparent;
+      border-bottom: 5px solid #2d68f0 !important; } }
+
+.section-planet {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%; }
+  @media only screen and (max-width: 75em) {
+    .section-planet {
+      grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr)); } }
+  @media only screen and (max-width: 56.25em) {
+    .section-planet {
+      margin-top: 0; } }
+  @media only screen and (max-width: 43.75em) {
+    .section-planet {
+      margin-top: 8rem;
+      padding-top: 1rem;
+      border-top: 0.5px solid #838391; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-planet {
+      justify-content: end; } }
+  .section-planet .planet-illustration {
+    margin-left: 30%;
+    margin-top: 15%; }
+    @media only screen and (max-width: 75em) {
+      .section-planet .planet-illustration {
+        margin: 10rem auto 10rem auto; } }
+    @media only screen and (max-width: 31.25em) {
+      .section-planet .planet-illustration {
+        margin-left: 40%; } }
+    @media only screen and (max-width: 25em) {
+      .section-planet .planet-illustration {
+        margin-left: 45%; } }
+    @media only screen and (max-width: 21.87em) {
+      .section-planet .planet-illustration {
+        margin-left: 50%; } }
+    .section-planet .planet-illustration__img {
+      height: 30rem;
+      width: auto; }
+  .section-planet .planet-info {
+    width: 65%; }
+    @media only screen and (max-width: 75em) {
+      .section-planet .planet-info {
+        margin: 0rem auto; } }
+    @media only screen and (max-width: 31.25em) {
+      .section-planet .planet-info {
+        width: 30%; } }
+    @media only screen and (max-width: 25em) {
+      .section-planet .planet-info {
+        margin-left: 25rem; } }
+    @media only screen and (max-width: 21.87em) {
+      .section-planet .planet-info {
+        margin-left: 28rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .section-planet .planet-info-detail {
+        width: 170%; } }
+    @media only screen and (max-width: 25em) {
+      .section-planet .planet-info-detail {
+        width: 190%; } }
+    .section-planet .planet-info .planet-info__title {
+      font-size: 8rem;
+      text-transform: uppercase;
+      margin-bottom: 4rem; }
+      @media only screen and (max-width: 21.87em) {
+        .section-planet .planet-info .planet-info__title {
+          font-size: 4rem; } }
+    .section-planet .planet-info .planet-info__description {
+      margin-bottom: 2rem;
+      letter-spacing: 0.5px;
+      line-height: 2.5rem;
+      word-spacing: 0.2rem; }
+      @media only screen and (max-width: 21.87em) {
+        .section-planet .planet-info .planet-info__description {
+          font-size: 1.2rem; } }
+    .section-planet .planet-info .planet-info__source {
+      margin-bottom: 5rem;
+      display: flex;
+      align-items: flex-end; }
+      .section-planet .planet-info .planet-info__source .planet-source-text {
+        margin-right: 0.5rem;
+        color: #838391; }
+      .section-planet .planet-info .planet-info__source .planet-source-destination {
+        color: #838391;
+        text-decoration: underline;
+        cursor: pointer; }
+      .section-planet .planet-info .planet-info__source .planet-source-icon {
+        height: 1rem;
+        width: auto;
+        margin-left: 1rem;
+        cursor: pointer; }
+
+@media only screen and (max-width: 56.25em) {
+  .planet-info-buttons {
+    order: -1;
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (max-width: 43.75em) {
+  .planet-info-buttons {
+    border-bottom: 0.5px solid #838391; } }
+
+@media only screen and (max-width: 37.5em) {
+  .planet-info-buttons {
+    padding-left: 10%;
+    padding-right: 5%; } }
+
+@media only screen and (max-width: 31.25em) {
+  .planet-info-buttons {
+    padding-left: 25%;
+    padding-right: 0%; } }
+
+@media only screen and (max-width: 25em) {
+  .planet-info-buttons {
+    padding-left: 40%;
+    padding-right: 0%; } }
+
+.planet-info-buttons .planet-btn {
+  margin: 2rem 0 0 95%;
+  padding: 1.5rem 1.5rem;
+  border-radius: 0.1rem;
+  width: 45rem;
+  border: 1px solid #838391;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap; }
+  @media only screen and (max-width: 75em) {
+    .planet-info-buttons .planet-btn {
+      margin: 2rem 18%; } }
+  @media only screen and (max-width: 56.25em) {
+    .planet-info-buttons .planet-btn {
+      width: 100%;
+      margin: 0rem 0;
+      border: none; } }
+  @media only screen and (max-width: 43.75em) {
+    .planet-info-buttons .planet-btn {
+      font-size: 1.3rem;
+      text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .planet-info-buttons .planet-btn {
+      padding: 1.5rem 0.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .planet-info-buttons .planet-btn {
+      padding: 1.5rem 0rem; } }
+  .planet-info-buttons .planet-btn .btn-num {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    color: #838391; }
+    @media only screen and (max-width: 56.25em) {
+      .planet-info-buttons .planet-btn .btn-num {
+        visibility: hidden;
+        width: 0%; } }
+    @media only screen and (max-width: 37.5em) {
+      .planet-info-buttons .planet-btn .btn-num {
+        margin-left: 0rem;
+        margin-right: 0rem; } }
+
+.planet-data {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 70%;
+  margin-left: 20%;
+  align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .planet-data {
+      margin-left: 0%;
+      width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .planet-data {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center; } }
+  @media only screen and (max-width: 43.75em) {
+    .planet-data {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      margin: 1rem 0;
+      width: 100%; } }
+  .planet-data__type {
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    border: 0.1rem solid #838391;
+    border-radius: 0.1rem;
+    text-transform: uppercase;
+    width: 25rem; }
+    @media only screen and (max-width: 75em) {
+      .planet-data__type {
+        width: 20rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .planet-data__type {
+        margin: 2rem auto; } }
+    @media only screen and (max-width: 43.75em) {
+      .planet-data__type {
+        width: 90%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+    .planet-data__type--text {
+      color: #838391;
+      margin-bottom: 2rem; }
+    .planet-data__type--value {
+      font-size: 3.5rem;
+      margin-bottom: 1rem; }
+      @media only screen and (max-width: 75em) {
+        .planet-data__type--value {
+          font-size: 2.5rem; } }
